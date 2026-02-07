@@ -1,0 +1,40 @@
+@{
+    ViewData["Title"] = "Lesson Pricing";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Ski Lesson Calculator</h1>
+    <p class="lead">Plan your next session on the slopes.</p>
+    <hr />
+
+    <div class="container" style="max-width: 500px;">
+        <form class="text-start">
+            <div class="mb-3">
+                <label for="hours" class="form-label fw-bold">How many hours of tutoring?</label>
+                <input type="number" id="hours" class="form-control form-control-lg" placeholder="Enter hours..." min="1">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">Hourly Rate</label>
+                <div class="input-group">
+                    <span class="input-group-text">$</span>
+                    <input type="text" id="rate" class="form-control" value="50.00" readonly>
+                </div>
+            </div>
+
+            <button type="button" id="btnCalculate" class="btn btn-info btn-lg w-100 fw-bold">Calculate Total</button>
+
+            <div class="mt-4">
+                <label class="form-label fw-bold">Total Estimate</label>
+                <input type="text" id="total" class="form-control form-control-lg bg-light" readonly placeholder="$0.00">
+            </div>
+        </form>
+
+        <div class="mt-5">
+            <a asp-action="Index" class="text-decoration-none text-secondary">← Back to Home</a>
+        </div>
+    </div>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/calculator.js"></script>
