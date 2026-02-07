@@ -8,7 +8,7 @@ $(document).ready(function () {
             const total = (hours * rate).toFixed(2);
             $("#total").val("$" + total);
         } else {
-            alert("Please enter a valid number of hours.");
+            alert("Please enter a valid number of hours.");  // this makes sure the user doesnt enter a negative number of hours
             $("#hours").focus();
         }
     });

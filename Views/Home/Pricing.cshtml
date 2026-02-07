@@ -2,6 +2,7 @@
     ViewData["Title"] = "Lesson Pricing";
 }
 
+@* heading and start of calculator page *@
 <div class="text-center">
     <h1 class="display-4">Ski Lesson Calculator</h1>
     <p class="lead">Plan your next session on the slopes.</p>
@@ -21,7 +22,7 @@
                     <input type="text" id="rate" class="form-control" value="50.00" readonly>
                 </div>
             </div>
-
+@* this part uses the js calcuator function to mutiply the hours by the 50$ rate *@
             <button type="button" id="btnCalculate" class="btn btn-info btn-lg w-100 fw-bold">Calculate Total</button>
 
             <div class="mt-4">

@@ -5,7 +5,8 @@
 <div class="text-center">
     <h1 class="display-4">Welcome to the Greatest Snow on Earth! (My hobby is skiing in utah)</h1>
     <hr />
-
+    
+    @* this part links the photo from img folder and does the caption*@
     <img src="~/img/skiing-jump.jpeg" class="rounded shadow mb-4" style="max-width: 600px;" alt="Me skiing in Provo" />
     <p class="fst-italic">Me going off a jump at solitude last week!</p>
 
@@ -27,7 +28,7 @@
         <img src="~/img/ski-lift.jpeg" class="img-fluid rounded shadow" style="max-width: 500px;" alt="View from the top" />
         <p class="fst-italic">The view from the lift at Solitude.</p>
     </div>
-
+@* this button is important and links to the pricing view, so they can calcuate the price *@
     <div class="mt-5 mb-5">
         <a asp-controller="Home" asp-action="Pricing" class="btn btn-info btn-lg">View Ski Lesson Pricing</a>
     </div>
